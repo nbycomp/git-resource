@@ -1,4 +1,4 @@
-ARG base_image=ubuntu:bionic
+ARG base_image=ubuntu:22.04
 
 FROM ${base_image} AS resource
 

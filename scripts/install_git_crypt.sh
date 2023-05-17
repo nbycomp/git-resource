@@ -9,8 +9,8 @@ _main() {
   cd "$tmpdir"
   git clone https://github.com/AGWA/git-crypt.git
   cd git-crypt
-  git checkout tags/0.6.0
-  make
+  git checkout tags/0.7.0
+  CXXFLAGS='-DOPENSSL_API_COMPAT=0x30000000L' make
   make install
   cd ../..
   rm -rf "$tmpdir"
